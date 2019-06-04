@@ -1,0 +1,109 @@
+$bgwhite: #ddd1d1;
+$bgblue: linear-gradient(to bottom, #06304a, #0c334e, #113651, #163a55, #1b3d59);
+$marginLeft:100px;
+
+.div-main {
+
+    float: left;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin-top: -25%;
+    margin-left: -25%;
+    background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(255, 255, 255, 1) 100%);
+
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#div-blue {
+    @extend .div-main;
+    background-image: $bgblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+#div-white {
+    @extend .div-main;
+
+    color: black;
+
+
+}
+
+#logo {
+    margin-top: 25px;
+    margin-left: $marginLeft;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(237, 22, 81);
+    font-size: 30px;
+}
+
+.call-us {
+    padding: 20px 0px 20px 0px;
+    margin-left: $marginLeft;
+    font-size: 25px;
+}
+
+.number {
+    margin-left: $marginLeft;
+    font-size: 33px;
+}
+
+#white-container {
+    font-size: 27px;
+    margin-top: 40px;
+    margin-right: $marginLeft;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 80%;
+
+
+}
+
+#checkBox {
+    width: 75%;
+    vertical-align: text-top;
+    font-size: 10px;
+}
+
+#btn {
+    background: #e041c0;
+    background-image: linear-gradient(to bottom, #e041c0, #d90f82);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    width: 100px;
+    margin-left: 180px;
+
+}
+
+#btn:hover {
+    background: #3c91fa;
+    text-decoration: none;
+    cursor: pointer;
+}

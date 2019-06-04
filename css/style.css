@@ -1,0 +1,106 @@
+.div-main, #div-blue, #div-white {
+  float: left;
+  height: 400px;
+  width: 400px;
+  padding: 10px; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+#container {
+  position: fixed;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-top: -25%;
+  margin-left: -25%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(47%, #f6f6f6), to(white));
+  background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 47%, white 100%);
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#div-blue {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#06304a), color-stop(#0c334e), color-stop(#113651), color-stop(#163a55), to(#1b3d59));
+  background-image: linear-gradient(to bottom, #06304a, #0c334e, #113651, #163a55, #1b3d59);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#div-white {
+  color: black; }
+
+#logo {
+  margin-top: 25px;
+  margin-left: 100px;
+  width: 150px;
+  padding: 15px;
+  background-color: #ed1651;
+  font-size: 30px; }
+
+.call-us {
+  padding: 20px 0px 20px 0px;
+  margin-left: 100px;
+  font-size: 25px; }
+
+.number {
+  margin-left: 100px;
+  font-size: 33px; }
+
+#white-container {
+  font-size: 27px;
+  margin-top: 40px;
+  margin-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  height: 80%; }
+
+#checkBox {
+  width: 75%;
+  vertical-align: text-top;
+  font-size: 10px; }
+
+#btn {
+  background: #e041c0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e041c0), to(#d90f82));
+  background-image: linear-gradient(to bottom, #e041c0, #d90f82);
+  border-radius: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  width: 100px;
+  margin-left: 180px; }
+
+#btn:hover {
+  background: #3c91fa;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
