@@ -80,7 +80,7 @@ body {
   padding: 10px;
   height: 80%; }
 
-#checkBox {
+#checkbox {
   width: 75%;
   vertical-align: text-top;
   font-size: 10px; }
@@ -102,5 +102,11 @@ body {
   background: #3c91fa;
   text-decoration: none;
   cursor: pointer; }
+
+.error {
+  border: red 2px solid; }
+
+.ok {
+  border: green 2px solid; }
 
 /*# sourceMappingURL=style.css.map */
