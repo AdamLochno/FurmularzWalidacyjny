@@ -1,9 +1,10 @@
 $bgwhite: #ddd1d1;
 $bgblue: linear-gradient(to bottom, #06304a, #0c334e, #113651, #163a55, #1b3d59);
-$marginLeft:100px;
+$margin:100px;
+$correctBorder:green solid 1px;
+$wrongBorder:red solid 1px;
 
 .div-main {
-
     float: left;
     height: 400px;
     width: 400px;
@@ -38,20 +39,16 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-
 }
 
 #div-white {
     @extend .div-main;
-
     color: black;
-
-
 }
 
 #logo {
     margin-top: 25px;
-    margin-left: $marginLeft;
+    margin-left: $margin;
     width: 150px;
     padding: 15px;
     background-color: rgb(237, 22, 81);
@@ -60,31 +57,30 @@ body {
 
 .call-us {
     padding: 20px 0px 20px 0px;
-    margin-left: $marginLeft;
+    margin-left: $margin;
     font-size: 25px;
 }
 
 .number {
-    margin-left: $marginLeft;
+    margin-left: $margin;
     font-size: 33px;
 }
 
 #white-container {
     font-size: 27px;
     margin-top: 40px;
-    margin-right: $marginLeft;
+    margin-right: $margin;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     height: 80%;
-
-
 }
 
-#checkbox {
+#checkboxText {
     width: 75%;
-    vertical-align: text-top;
+    // vertical-align: text-top;
+    text-align: left;
     font-size: 10px;
 }
 
@@ -99,7 +95,6 @@ body {
     text-decoration: none;
     width: 100px;
     margin-left: 180px;
-
 }
 
 #btn:hover {
@@ -108,10 +103,35 @@ body {
     cursor: pointer;
 }
 
+.inputText {
+    font-size: 12px;
+    // background-color: #b7d0ee;
+}
+
 .error {
-    border: red 2px solid;
+    @extend .inputText;
+    border: $wrongBorder
 }
 
 .ok {
-    border: green 2px solid;
+    @extend .inputText;
+    border: $correctBorder
+}
+
+.checkbox {
+    transform: scale(1.5);
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+#checkboxTextOk {
+    @extend #checkboxText;
+    border: $correctBorder
+}
+
+#checkboxTextError {
+    @extend #checkboxText;
+    border: $wrongBorder
 }

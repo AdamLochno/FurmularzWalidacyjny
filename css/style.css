@@ -80,9 +80,9 @@ body {
   padding: 10px;
   height: 80%; }
 
-#checkbox {
+#checkboxText, #checkboxTextOk, #checkboxTextError {
   width: 75%;
-  vertical-align: text-top;
+  text-align: left;
   font-size: 10px; }
 
 #btn {
@@ -103,10 +103,26 @@ body {
   text-decoration: none;
   cursor: pointer; }
 
+.inputText, .error, .ok {
+  font-size: 12px; }
+
 .error {
-  border: red 2px solid; }
+  border: red solid 1px; }
 
 .ok {
-  border: green 2px solid; }
+  border: green solid 1px; }
+
+.checkbox {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5); }
+
+.checkbox:hover {
+  cursor: pointer; }
+
+#checkboxTextOk {
+  border: green solid 1px; }
+
+#checkboxTextError {
+  border: red solid 1px; }
 
 /*# sourceMappingURL=style.css.map */
